@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Constants</title>
+    <script type="text/javascript">
+    /* ES6 Implementation */
+    const PI = 3.14;
+    console.log('Value of PI is:', PI);
+
+    /* ES5 Implementation of Constants */
+    Object.defineProperty(typeof global === 'object' ? global : window, "Pi", {
+        value: 3.141,
+        enumerable: true,
+        writable: false,
+        configurable: false
+    });
+
+    console.log('Value of Pi is:', Pi);
+    </script>
+</head>
+
+<body>
+    <h1>Constants</h1>
+</body>
+
+</html>
